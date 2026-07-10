@@ -1,0 +1,39 @@
+# GitHub Actions CI Workflow
+# Triggered on every push and pull request to the main branch.
+# It installs dependencies and runs all Jest tests automatically.
+#  Github will automatically runs this whenever something heppens in your repo
+# yaml is a way of writing configurations in a structure format
+name: CI - Run Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run Jest Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Node.js (version 20 LTS)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      # Step 3: Install project dependencies (including Jest)
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run all Jest tests
+      - name: Run tests
+        run: npm test

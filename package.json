@@ -6,7 +6,6 @@
   "scripts": {
     "test": "jest",
     "test:pass": "jest test/math.test.js",
-    "test:fail": "jest math.fail.test.js",
     "test:all": "jest"
   },
   "author": "",

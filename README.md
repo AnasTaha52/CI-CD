@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/master-cicd.png" alt="Master CI/CD" width="100%"/>
+</p>
+
 # 🧮 CI/CD Calculator
 
 A simple JavaScript calculator project built to **learn CI/CD from scratch** using **GitHub Actions**.
@@ -17,6 +21,8 @@ CICD/
 ├── .github/
 │   └── workflows/
 │       └── ci.yml          # GitHub Actions CI pipeline
+├── assets/
+│   └── master-cicd.png     # CI/CD reference diagram
 ├── src/
 │   └── math.js             # Calculator module (add, subtract, multiply, divide, modulo)
 ├── test/

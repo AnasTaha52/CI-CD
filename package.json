@@ -4,7 +4,10 @@
   "description": "Simple calculator to learn CI/CD with GitHub Actions",
   "main": "src/math.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:pass": "jest test/math.test.js",
+    "test:fail": "jest math.fail.test.js",
+    "test:all": "jest"
   },
   "author": "",
   "license": "ISC",

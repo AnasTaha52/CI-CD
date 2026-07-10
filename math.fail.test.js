@@ -7,7 +7,7 @@
  * ❌ = Intentional failure | 💡 = Lesson being taught
  */
 
-const { add, subtract, multiply, divide, modulo } = require("../src/math");
+const { add, subtract, multiply, divide, modulo } = require("./src/math");
 
 // ─────────────────────────────────────────────────────────────
 // FAILURE TYPE 1: Wrong Expected Value (Logic Error)
